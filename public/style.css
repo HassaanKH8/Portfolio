@@ -101,6 +101,8 @@ nav ul li a::selection {
     padding: 8px 16px;
     text-decoration: none;
     border: none;
+    transition: all 0.2s;
+
     cursor: pointer;
   }
   
