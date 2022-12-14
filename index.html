@@ -53,14 +53,14 @@
         </div>
         <div class="divo">
             <ul class="check-list" style="line-height: 45px;padding: 0;">
-            <li style="margin-top: 100px;">HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>NodeJS</li>
-            <li>ExpressJS</li>
-            <li>BootStrap</li>
-            <li>WordPress</li>
+            <li class="reveal" style="margin-top: 100px;">HTML</li>
+            <li class="reveal" >CSS</li>
+            <li class="reveal" >JavaScript</li>
+            <li class="reveal" >Python</li>
+            <li class="reveal" >NodeJS</li>
+            <li class="reveal" >ExpressJS</li>
+            <li class="reveal" >BootStrap</li>
+            <li class="reveal" >WordPress</li>
         </div>
         
             
@@ -92,7 +92,7 @@
                 for(var i = 0; i<reveals.length; i++){
                     var windowheight = window.innerHeight;
                     var revealtop = reveals[i].getBoundingClientRect().top;
-                    var revealpoint = 150;
+                    var revealpoint = 100;
                     
                     if(revealtop < windowheight-revealpoint){
                         reveals[i].classList.add('activ');
