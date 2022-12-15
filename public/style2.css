@@ -199,13 +199,13 @@ p{
 @media(max-width:1050px){
     .ppg{
         width: 400px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 @media(max-width:925px){
     .ppg{
         width: 400px;
-        margin-top: 50px;
+        margin-top: 20px;
         display: block;
     }
 }
@@ -231,5 +231,67 @@ p{
 @media(max-width:550px){
     #pppp{
         width: 70%;
+    }
+}
+@media(max-width:645px){
+    .ppg{
+        width: 350px;
+        margin-top: 10px;
+        display: block;
+    }
+}
+@media(max-width:575px){
+    .ppg{
+        width: 300px;
+        margin-top: 20px;
+        display: block;
+    }
+}
+@media(max-width:475px){
+    .ppg{
+        width: 250px;
+        margin-top: 20px;
+        display: block;
+    }
+}
+@media(max-width:510px){
+    .ppg{
+        width: 250px;
+        margin-top: 10px;
+        display: block;
+    }
+}
+@media(max-width:320px){
+    .ppg{
+        width: 175px;
+        margin-top: 10px;
+        display: block;
+    }
+    #pppp{
+        width: 100%;
+    }
+}
+@media(max-width:445px){
+    .ppg{
+        width: 200px;
+        margin-top: 10px;
+        display: block;
+    }
+    #pppp{
+        width: 100%;
+    }
+}
+@media(max-width:375px){
+    .ppg{
+        width: 180px;
+        margin-top: 10px;
+        display: block;
+    }
+}
+@media(max-width:345px){
+    .ppg{
+        width: 150px;
+        margin-top: 10px;
+        display: block;
     }
 }
