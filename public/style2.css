@@ -40,6 +40,7 @@ form{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: 20px;
 }
 form input, form textarea{
     border: none;
@@ -293,5 +294,14 @@ p{
         width: 150px;
         margin-top: 10px;
         display: block;
+    }
+}
+@media(min-width:320px){
+    #bt12{
+        width: 80%;
+    }
+    .devi 
+    {
+        width: 90%;
     }
 }
