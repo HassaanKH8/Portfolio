@@ -339,7 +339,13 @@ p a::selection{
     transition: all 0.2s;
     box-shadow: 2px 2px 0px 0px #c8da7a;
 }
-
+.blr{
+    filter: blur(2px);
+    cursor: default;
+}
+.blr:hover{
+    filter: blur(0px);
+}
 @media (max-width: 1300px) {
     .PP {
         width: 300px;
@@ -683,4 +689,11 @@ p a::selection{
     color: #b8c855;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 28px;
+  }
+  .ghp{
+    transition: all 0.2s;
+    border-radius: 10px;
+  }
+  .ghp:hover{
+    box-shadow: 2px 2px 0px 0px #c8da7a;
   }
