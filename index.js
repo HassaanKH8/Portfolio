@@ -47,9 +47,9 @@ app.post("/hello.html", function (req, res) {
         else{
             console.log("Email Sent: " + info.response);
         }
-    })
+    });
 
-    return res.redirect('/');
+    return res.redirect('/hello.html');
 });
 
 
