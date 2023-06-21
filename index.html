@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/public/PP/Avatar2.png">
+
+
+    <link rel="stylesheet" href="/public/style.css">
+
+    <title>HassaanKH</title>
+</head>
+
+<body>
+    <div>
+        <nav style="color: #1d1d1d;">
+            <a href="/">
+                <h1>Hassaan Ahmed</h1>
+            </a>
+            <ul class="nav-menu" style="padding: 0;">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-stack">Stack</a></li>
+                <li class="nav-item"><a class="nav-link butn" href="/work.html">MyWork</a></li>
+            </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+    <section class="sec1">
+        <div class="div1">
+            <h1 id="hassaan">I'm Hassaan.</h1>
+            <h2 id="dev">a <u>Creative</u> web designer / developer</h2>
+        </div>
+        <img src="/public/PP/Avatar2.png" class="PP">
+    </section>
+    <section id="about">
+        <hr>
+        <img src="/public/PP/Avatar.png" id="avatar" class="reveal">
+        <h1 id="about-heading" class="reveal">About Me</h1>
+        <p id="abp" class="reveal">
+            Got into the development field at the age of 14, with an idea of making my own game. I made several games
+            after that. Learnt Python. Made a YouTube Channel to teach programming. <a
+                href="https://www.youtube.com/DeveloperVibes">(DeveloperVibes).</a> Shifted to Web development a couple
+            of years ago. Continuing my Journey in Full Stack Development.</p>
+    </section>
+    <section id="my-stack">
+        <div>
+            <hr style="margin-top: 100px;margin-bottom: 20px;">
+            <h1 class="reveal">My Tech Stack</h1>
+            <hr id="hrd">
+        </div>
+        <div class="divo">
+            <ul class="check-list" style="line-height: 45px;padding: 0;">
+                <li class="reveal blr" style="margin-top: 100px;">HTML</li>
+                <li class="reveal blr">CSS</li>
+                <li class="reveal blr">JavaScript</li>
+                <li class="reveal blr">Python</li>
+                <li class="reveal blr">NodeJS</li>
+                <li class="reveal blr">ExpressJS</li>
+                <li class="reveal blr">BootStrap</li>
+                <li class="reveal blr">WordPress</li>
+        </div>
+
+
+    </section>
+    <a class="nav-link butn bt" href="/hello.html">Say Hi!</a>
+    <a class="bt" href="https://github.com/HassaanKH8"><img src="/public/PP/github.png" class="ghp"></a>
+    <section id="socials">
+        <p>© 2022 HassaanKH. All rights reserved.</p>
+    </section>
+
+    <script>
+        const burger = document.querySelector(".burger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navitem = document.querySelectorAll(".nav-link");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        navitem.forEach(n => n.addEventListener("click", () => {
+            burger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 100;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('activ');
+                }
+                else {
+                    reveals[i].classList.remove('activ');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
