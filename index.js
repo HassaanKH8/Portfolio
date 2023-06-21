@@ -39,7 +39,7 @@ app.post("/hello.html", function (req, res) {
     subject: 'Portfolio Email',
     text: nm +"\n"+ email +"\n"+ msg
     };
-
+    
     transporter.sendMail(mailOptions, function(error,info){
         if(error){
             console.error();
@@ -49,7 +49,8 @@ app.post("/hello.html", function (req, res) {
         }
     });
 
-    return res.redirect('/hello.html');
+    return res.redirect('https://hassaan.codes');
+
 });
 
 

@@ -12,6 +12,9 @@ nav h1{
     font-size: 28px;
     margin-bottom: 0;
 }
+#bt12{
+    cursor: pointer;
+}
 #titl{
     text-align: center;
     font-family: 'Lato';
