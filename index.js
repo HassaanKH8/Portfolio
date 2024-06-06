@@ -27,6 +27,10 @@ app.get("/work.html", function (req, res) {
     res.sendFile(__dirname+"/work.html"); 
     
 });
+app.get("/app-ads.txt", function (req, res) {
+    res.sendFile(__dirname+"/app-ads.txt"); 
+    
+});
 
 app.post("/hello.html", function (req, res) {
     nm = req.body.name;
